@@ -34,6 +34,21 @@
     <footer>
         
     </footer>
-     <script src="login.js"></script>
+    <script>
+        function validarFormulario() {
+            //obtener los valores de los campos de entrada
+            const username = document.querySelector('input[name="username"]').value;
+            const password = document.querySelector('input[name="password"]').value;
+
+            //verificar si los campos están vacíos
+            if (username === "" || password === "") {
+                alert('Por favor, ingresa tu usuario y contraseña.');
+                return false; // Evitar que el formulario se envíe
+            }
+
+            //si no están vacíos, redirigir a la página principal
+            window.location.href = 'principal.html';
+        }
+    </script>
 </body>
 </html>

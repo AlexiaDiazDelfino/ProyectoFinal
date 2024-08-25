@@ -9,9 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         //redirige a login.html
         window.location.href = 'login.html';
     }
-
-    //añade un event listener al botón de login (sólo se ejecuta si estamos en login.html)
-    const botonLogin = document.getElementById('submit');
     if (botonLogin) { // Verifica que el botón de login exista (es decir, que estamos en login.html)
         botonLogin.addEventListener('click', function() {
             const user = document.getElementById('username').value;

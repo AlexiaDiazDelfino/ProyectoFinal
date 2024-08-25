@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Verificar si el usuario ya ha iniciado sesión
     const estaLogged = localStorage.getItem('logged');
 
-    if (estaLogged) {
+    if (estaLogged === 'true') {
         // Si el usuario ya está autenticado, redirigir a principal.html
         window.location.href = 'principal.html';
         return; // Termina la ejecución del script si ya está autenticado

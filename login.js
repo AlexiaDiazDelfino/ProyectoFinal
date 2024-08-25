@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() { //espera a que el DOM
             alert('Por favor, complete todos los campos.'); //muestra un mensaje de alerta
         } else {
 
-            window.location.href = 'ProyectoFinal/principal.html'; //redirige a la página principal
+            window.location.href = 'principal.html'; //redirige a la página principal
         }
     });
 });

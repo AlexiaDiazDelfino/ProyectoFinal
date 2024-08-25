@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() { //espera a que el DOM
         if (username === '' || password === '') { // Si el usuario o la contraseña están vacíos
             alert('Por favor, complete todos los campos.'); //muestra un mensaje de alerta
         } else {
-
+            localStorage.setItem('logged', 'true'); // Guarda el estado de autenticación en localStorage
+            
             window.location.href = 'principal.html'; //redirige a la página principal
         }
     });

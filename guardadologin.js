@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     //añade un event listener al botón de login (sólo se ejecuta si estamos en login.html)
-    const botonLogin = document.getElementById('boton-login');
+    const botonLogin = document.getElementById('submit');
     if (botonLogin) { // Verifica que el botón de login exista (es decir, que estamos en login.html)
         botonLogin.addEventListener('click', function() {
-            const user = document.getElementById('usuario').value;
-            const pass = document.getElementById('contraseña').value;
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
 
             //verifica que ambos campos no estén vacíos
             if (user && pass) {

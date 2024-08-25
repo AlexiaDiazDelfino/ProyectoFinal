@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('logged', 'true'); //guarda el estado de autenticación
 
                 //redirige a la pagina anterior, la pqgina principal
-                const PaginaPrevia = localStorage.getItem('PaginaPrevia') || 'index.html';
+                const PaginaPrevia = localStorage.getItem('PaginaPrevia') || 'principal.html';
                 window.location.href = PaginaPrevia;
             } else {
                 alert('Falta completar el campo usuario o contraseña');

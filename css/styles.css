@@ -8,6 +8,35 @@
 .jumbotron .display-4 {
   font-weight: bold;
 }
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.navbar-user-info {
+    display: flex; /* Para alinear el texto y el botón en línea */
+    align-items: center; /* Centra verticalmente */
+}
+
+#showusername {
+    margin-right: 15px; /* Espacio entre el nombre de usuario y el botón */
+    font-weight: bold;
+    color: white; /* Ajusta según sea necesario para tu diseño */
+}
+
+#logout {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logout:hover {
+    background-color: #ff1a1a;
+}
 
 nav a {
   text-decoration: none;

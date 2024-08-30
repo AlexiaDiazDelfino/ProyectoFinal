@@ -27,6 +27,13 @@ body {
         box-sizing: border-box;
         text-align: center;
     }
+
+    #login{
+        display: grid; /*te ordena las cosas de arriba para abajo y te deja todo del mismo tamaño*/
+        gap: 1em;
+        min-width: (400px, 80vw); /*esto usa el mas chico de los numeros, entonces le das un numero fijo con 400px y un numero dinamico con 90vw, si miras desde una pc se ve de 400px y si lo ves desde un celular el 400px es muy grande, entonces usa el 90vw*/
+    }   
+    
     
 
  header h1 {
@@ -77,9 +84,9 @@ body {
 
 form input[type="text"],
 form input[type="password"] {
-    width: 100%;
+    /*width: 100%; con el grid que le agregue al id de login no es necesario el width*/
     padding: 10px;
-    margin: 10px 0;
+    /*margin: 10px 0; con el gap que le agregue no es necesario el margin*/
     border-radius: 20px;
     border: 1px solid #ccc;
 }
